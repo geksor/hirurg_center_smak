@@ -1,0 +1,301 @@
+@import "bootstrap";
+@import "jinmediaReboot";
+@import "magic_pop";
+@import "fonts";
+@import "agreement";
+@import "slick";
+@import "slick-theme";
+
+html{
+  min-height: 100%;
+}
+
+$temlatePath: '..';
+$mainBackgroundColor: #ffffff;
+$mobileMenuOpenColor: #316d2f;
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(#{$temlatePath}/css/fonts/Montserrat-Bold.ttf);
+}
+.f_Montserrat-Bold{
+  font-family: Montserrat-Bold, sans-serif;
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(#{$temlatePath}/css/fonts/Montserrat-SemiBold.ttf);
+}
+.f_Montserrat-SemiBold{
+  font-family: Montserrat-SemiBold, sans-serif;
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(#{$temlatePath}/css/fonts/Montserrat-Medium.ttf);
+}
+.f_Montserrat-Medium{
+  font-family: Montserrat-Medium, sans-serif;
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(#{$temlatePath}/css/fonts/Montserrat-Regular.ttf);
+}
+.f_Montserrat-Regular{
+  font-family: Montserrat-Regular, sans-serif;
+}
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url(#{$temlatePath}/css/fonts/Montserrat-Italic.ttf);
+}
+.f_Montserrat-Italic{
+  font-family: Montserrat-Italic, sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+.flex_col{
+  flex-direction: column;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.absolute_100prc{
+  @extend .absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body{
+  @extend .f_Montserrat-Regular;
+  background-color: $mainBackgroundColor;
+  min-height: 100vh;
+}
+.page{
+  @extend .flex,.flex_col;
+  min-height: 100vh;
+  background-color: $mainBackgroundColor;
+}
+.main{
+  @extend .relative;
+  flex: 1;
+}
+
+.btn_slideout{
+  rect{
+    fill: #ffbe29;
+    &:first-child{
+      fill: #7cc623;
+    }
+    &:last-child{
+      fill: #df0024;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+}
+
+
+.left_menu {
+  @extend .text-transform_uppercase,.fs_16,.fc_fff;
+  ul{
+    padding: 10px 20px 0;
+    >li{
+      border-bottom: thin solid rgba(255, 255, 255, 0.2);
+      >a{
+        padding: 18px 0;
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.inner_lm{
+  padding: 0 20px;
+}
+.socIco_lm{
+  margin-top: 20px;
+}
+
+.socIco{
+  .socIco_item{
+    transition: transform .2s ease, box-shadow .2s ease;
+    height: 42px;
+    width: 42px;
+    border-radius: 6px;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    &.facebook{
+      background-color: #254395;
+    }
+    &.vk{
+      background-color: #006cb7;
+    }
+    &.instagram{
+      background: -webkit-linear-gradient(45deg, #f0ea33 15%, #e67b3c 35%, #dc2727 50%, #cc2366 60%, #7518bc 85%);
+      background: -o-linear-gradient(45deg, #f0ea33 15%, #e67b3c 35%, #dc2727 50%, #cc2366 60%, #7518bc 85%);
+      background: linear-gradient(45deg, #f0ea33 15%, #e67b3c 35%, #dc2727 50%, #cc2366 60%, #7518bc 85%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    }
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.71);
+    }
+    svg{
+      height: 65%;
+      path{
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+#buttonUp{
+  $borderButtonUp: 4px;
+  display: none;
+  z-index: 10;
+  background: #8e8e8e;
+  width: 40px;
+  height: 40px;
+  border-radius: #{$borderButtonUp};
+  -moz-border-radius: #{$borderButtonUp};
+  -webkit-border-radius: #{$borderButtonUp};
+  position: fixed;
+  bottom: -100px;
+  right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  opacity: .7;
+  &.active{
+    bottom: 30px;
+  }
+  &:hover{
+    opacity: 1;
+  }
+  svg{
+    top: 1px;
+    position: relative;
+    path{
+      fill: #ffffff;
+    }
+  }
+}
+
+//--siteDefault--//
+
+.def_h{
+  @extend .f_Montserrat-SemiBold,.fs_24,.text-align_center;
+  letter-spacing: 1.8px;
+  @include media-breakpoint-up(sm){
+    font-size: 32px;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 36px;
+  }
+}
+.def_desc{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.text-align_center;
+  line-height: 24px;
+}
+.ico{
+  font-size: 0;
+}
+.transitionColorBgndColor{
+  transition: color .3s ease, background-color .3s ease;
+}
+.transitionAll{
+  transition: .3s ease;
+}
+.def_button{
+  @extend .transitionAll,.f_Montserrat-Regular,.fs_14,.fls_07;
+  min-height: 44px;
+  width: 100%;
+  border-radius: 22px;
+}
+.slideNavBtn{
+  @extend .transitionAll;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+//--siteStyle--//
+.header{
+  background-color: #3b98fa;
+  background-image: url("../images/gradient.png");
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 13px;
+}
+
+
+.sliderLine{
+  @extend .relative;
+  background-color: #3b98fa;
+  background-image: url("../images/gradient.png");
+  background-repeat: no-repeat;
+}
+.slider__navBlock{
+  @extend .absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+.slider__navBtn{
+  @extend .slideNavBtn;
+  path{
+    fill: #ffffff;
+  }
+  &:hover{
+    background-color: #FFFFFF;
+    path{
+      fill: #3e3e3e;
+    }
+  }
+}
+.slider__slide{
+  height: 807px;
+  background-image: url("../images/slide_bgnd_circle.svg");
+  background-position: 52px 117px;
+  background-repeat: no-repeat;
+  .contBgnd{
+    height: 100%;
+    background-image: url("../images/slider_bgnd.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+}
+.slider__textRow{
+    padding-top: 250px;
+}
+.slider__text{
+  @extend .f_Montserrat-Medium,.fc_fff;
+  @include media-breakpoint-up(xl){
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2.4px;
+  }
+}
+.slider__buttonRow{
+  padding-top: 80px;
+}
+.slider__moreButton{
+  @extend .def_button,.fc_fff;
+  border: solid 1px #ffffff;
+}
+.slider__signUpButton{
+  @extend .def_button;
+  color: #57b8cb;
+  background-color: #ffffff;
+}
