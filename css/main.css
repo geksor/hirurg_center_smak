@@ -2072,7 +2072,7 @@ img.mfp-img {
 .fs_14, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton {
   font-size: 14px; }
 
-.fs_16, .left_menu {
+.fs_16, .left_menu, .header {
   font-size: 16px; }
 
 .fs_18, .h {
@@ -2093,7 +2093,7 @@ img.mfp-img {
 .fc_2f4049 {
   color: #2f4049; }
 
-.fc_fff, .left_menu, .slider__text, .slider__moreButton {
+.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton {
   color: #ffffff; }
 
 .fc_697377 {
@@ -2111,7 +2111,7 @@ img.mfp-img {
 .fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton {
   letter-spacing: .7px; }
 
-.fls_08 {
+.fls_08, .header {
   letter-spacing: .8px; }
 
 .fls_09 {
@@ -2439,7 +2439,7 @@ html {
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .slider__text {
+.f_Montserrat-Medium, .header, .slider__text {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2599,6 +2599,9 @@ body {
   background-repeat: no-repeat;
   padding-top: 30px;
   padding-bottom: 13px; }
+
+.header__phone {
+  border-bottom: dashed 1px; }
 
 .sliderLine {
   background-color: #3b98fa;

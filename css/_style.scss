@@ -232,13 +232,16 @@ body{
 
 //--siteStyle--//
 .header{
+  @extend .f_Montserrat-Medium,.fs_16,.fc_fff,.fls_08;
   background-color: #3b98fa;
   background-image: url("../images/gradient.png");
   background-repeat: no-repeat;
   padding-top: 30px;
   padding-bottom: 13px;
 }
-
+.header__phone{
+  border-bottom: dashed 1px;
+}
 
 .sliderLine{
   @extend .relative;
