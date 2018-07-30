@@ -187,26 +187,31 @@ $('#buttonUp').click(function () {
 
 // slide();
 
-$('.comment__slider').slick({
-    slidesToShow: 1,
+$('.service_Slider').slick({
+    slidesToShow: 4,
     slidesToScroll: 1,
+    infinite: false,
 
-    prevArrow: '<button class="navBtn prev slick-arrow" type="button"><svg \n' +
-    ' xmlns="http://www.w3.org/2000/svg"\n' +
-    ' xmlns:xlink="http://www.w3.org/1999/xlink"\n' +
-    ' width="12px" height="20px">\n' +
-    '<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"\n' +
-    ' d="M0.298,9.286 L9.300,0.297 C9.695,-0.097 10.335,-0.097 10.731,0.297 C11.126,0.690 11.126,1.330 10.731,1.723 L2.443,9.999 L10.730,18.276 C11.125,18.669 11.125,19.308 10.730,19.703 C10.335,20.097 9.694,20.097 9.299,19.703 L0.297,10.714 C-0.092,10.324 -0.092,9.675 0.298,9.286 Z"/>\n' +
-    '</svg></button>',
+    prevArrow: '<button class="slideNavBtn serviceType__navBtn prev">\n' +
+    '                                <svg\n' +
+    '                                        xmlns="http://www.w3.org/2000/svg"\n' +
+    '                                        xmlns:xlink="http://www.w3.org/1999/xlink"\n' +
+    '                                        width="16px" height="9px">\n' +
+    '                                    <path fill-rule="evenodd"\n' +
+    '                                          d="M4.388,-0.000 L5.101,0.731 L1.929,3.983 L16.000,3.983 L16.000,5.017 L1.929,5.017 L5.101,8.269 L4.388,9.000 L-0.000,4.500 L4.388,-0.000 Z"/>\n' +
+    '                                </svg>\n' +
+    '                            </button>',
 
-    nextArrow: '<button class="navBtn next slick-arrow" type="button"><svg \n' +
-    ' xmlns="http://www.w3.org/2000/svg"\n' +
-    ' xmlns:xlink="http://www.w3.org/1999/xlink"\n' +
-    ' width="11px" height="20px">\n' +
-    '<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"\n' +
-    ' d="M10.702,9.286 L1.700,0.297 C1.305,-0.097 0.665,-0.097 0.269,0.297 C-0.126,0.690 -0.126,1.330 0.269,1.723 L8.557,9.999 L0.270,18.276 C-0.125,18.669 -0.125,19.308 0.270,19.703 C0.665,20.097 1.306,20.097 1.701,19.703 L10.703,10.714 C11.092,10.324 11.092,9.675 10.702,9.286 Z"/>\n' +
-    '</svg></button>',
-    // appendArrows: $('.newsNavWrap'),
+    nextArrow: '<button class="slideNavBtn serviceType__navBtn next">\n' +
+    '                                <svg\n' +
+    '                                        xmlns="http://www.w3.org/2000/svg"\n' +
+    '                                        xmlns:xlink="http://www.w3.org/1999/xlink"\n' +
+    '                                        width="16px" height="9px">\n' +
+    '                                    <path fill-rule="evenodd"\n' +
+    '                                          d="M11.612,-0.000 L10.899,0.731 L14.070,3.983 L-0.000,3.983 L-0.000,5.017 L14.070,5.017 L10.899,8.269 L11.612,9.000 L16.000,4.500 L11.612,-0.000 Z"/>\n' +
+    '                                </svg>\n' +
+    '                            </button>',
+    appendArrows: $('.serviceType__navBlock')
 });
 $('#course_select').on('change', function () {
     $('.courseTiming').removeClass('active');
