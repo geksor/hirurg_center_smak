@@ -1186,7 +1186,7 @@ html {
 .flex-row {
   flex-direction: row !important; }
 
-.flex-column, .service_slide {
+.flex-column, .service_slide, .payService__linksBlock {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -1210,7 +1210,7 @@ html {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center {
+.justify-content-center, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .payService__linksBlock {
   justify-content: center !important; }
 
 .justify-content-between {
@@ -1225,7 +1225,7 @@ html {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center {
+.align-items-center, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .payService__linksBlock {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -2373,19 +2373,19 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle {
+.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text {
+.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Regular;
   src: url(../css/fonts/Montserrat-Regular.ttf); }
-.f_Montserrat-Regular, body, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton {
+.f_Montserrat-Regular, body, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .consultForm__input {
   font-family: Montserrat-Regular, sans-serif; }
 
 @font-face {
@@ -2397,28 +2397,28 @@ html {
 .fs_12 {
   font-size: 12px; }
 
-.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .newsBlock__allNewsLink {
+.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list {
   font-size: 14px; }
 
-.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber {
+.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input {
   font-size: 16px; }
 
 .fs_18, .h, .service_slide .slideTitle {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
   font-size: 24px; }
 
 .fs_30 {
   font-size: 30px; }
 
-.fs_36 {
+.fs_36, .consultForm__title {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton {
+.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input {
   color: #ffffff; }
 
-.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle {
+.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list {
   color: #2e2e2e; }
 
 .fc_3b98fa, .aboutBlock__title span {
@@ -2433,10 +2433,10 @@ html {
 .fls_06 {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .newsBlock__allNewsLink {
+.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list {
   letter-spacing: .7px; }
 
-.fls_08, .header, .service_slide .slideNumber {
+.fls_08, .header, .service_slide .slideNumber, .consultForm__input {
   letter-spacing: .8px; }
 
 .fls_09, .service_slide .slideTitle {
@@ -2448,28 +2448,28 @@ html {
 .fls_15, .newsTitle {
   letter-spacing: 1.5px; }
 
-.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
   letter-spacing: 2.4px; }
 
-.flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText {
+.flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list {
   line-height: 24px; }
 
-.text-align_center, .def_desc {
+.text-align_center, .def_desc, .consultForm__title, .consultForm__input {
   text-align: center; }
 
 .text-transform_uppercase, .left_menu, .newsBlock__allNewsLink {
   text-transform: uppercase; }
 
-.flex, .page, .service_slide {
+.flex, .page, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .service_slide, .payService__linksBlock {
   display: flex; }
 
 .flex_col, .page {
   flex-direction: column; }
 
-.relative, .main, .sliderLine {
+.relative, .main, .sliderLine, .contentBlock__list li {
   position: relative; }
 
-.absolute, .absolute_100prc, .slider__navBlock {
+.absolute, .absolute_100prc, .slider__navBlock, .contentBlock__list li:before, .bgndImageBlock::before {
   position: absolute; }
 
 .absolute_100prc {
@@ -2567,16 +2567,16 @@ body {
     #buttonUp svg path {
       fill: #ffffff; }
 
-.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
   line-height: normal; }
   @media (min-width: 576px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
       font-size: 32px; } }
   @media (min-width: 768px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
       font-size: 36px; } }
   @media (min-width: 1200px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
       font-size: 48px; } }
 
 .def_desc {
@@ -2588,13 +2588,14 @@ body {
 .transitionColorBgndColor {
   transition: color .3s ease, background-color .3s ease; }
 
-.transitionAll, .def_button, .slider__moreButton, .slider__signUpButton, .slideNavBtn, .slider__navBtn {
+.transitionAll, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .slideNavBtn, .slider__navBtn {
   transition: .3s ease; }
 
-.def_button, .slider__moreButton, .slider__signUpButton {
+.def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit {
   min-height: 44px;
   width: 100%;
-  border-radius: 22px; }
+  border-radius: 22px;
+  border: solid 1px; }
 
 .slideNavBtn, .slider__navBtn {
   width: 50px;
@@ -2677,11 +2678,18 @@ body {
   padding-top: 80px; }
 
 .slider__moreButton {
-  border: solid 1px #ffffff; }
+  border-color: #ffffff; }
+  .slider__moreButton:hover {
+    background-color: #ffffff;
+    color: #57b8cb; }
 
 .slider__signUpButton {
   color: #57b8cb;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-color: #ffffff; }
+  .slider__signUpButton:hover {
+    background-color: transparent;
+    color: #ffffff; }
 
 .aboutNewsLine {
   padding-top: 90px;
@@ -2770,6 +2778,93 @@ body {
       color: #FFFFFF; }
     .service_slide:hover .slideMoreLink .dots {
       background-color: #fff800; }
+
+.payServiceLine {
+  padding: 90px 0 195px; }
+
+.payService__title {
+  margin-bottom: 60px; }
+
+.contentBlock__title {
+  margin-bottom: 60px; }
+
+.contentBlock__list {
+  padding-left: 25px; }
+  .contentBlock__list li:not(:last-child) {
+    margin-bottom: 25px; }
+  .contentBlock__list li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #51d379;
+    top: 8px;
+    left: -25px; }
+
+.payService__linksBlock {
+  height: 100%;
+  background-color: #f3f5f4;
+  padding: 15px; }
+
+.priceLink, .rulesLink {
+  max-width: 260px; }
+
+.priceLink {
+  background-color: #52d379;
+  margin-bottom: 40px;
+  border-color: #52d379; }
+  .priceLink:hover {
+    background-color: transparent;
+    color: #52d379; }
+
+.rulesLink {
+  background-color: #3b98fa;
+  border-color: #3b98fa; }
+  .rulesLink:hover {
+    background-color: transparent;
+    color: #3b98fa; }
+
+.consultFormLine {
+  padding-top: 62px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
+  background: #3b98fa;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3b98fa 0%, #51d379 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 );
+  /* IE6-9 */ }
+
+.bgndImageBlock::before {
+  content: url("../images/8.png");
+  bottom: 0;
+  font-size: 0; }
+
+.consultForm__form {
+  padding-bottom: 78px; }
+
+.consultForm__title {
+  letter-spacing: 1.8px;
+  margin-bottom: 56px; }
+
+.consultForm__input {
+  padding: 14px;
+  width: 100%;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px; }
+
+.consultForm__submit {
+  background-color: #ffffff;
+  color: #49bfa5;
+  border-color: #ffffff;
+  margin: 14px auto 0;
+  max-width: 230px; }
+  .consultForm__submit:hover {
+    background-color: transparent;
+    color: #ffffff; }
 
 .btn-hamburger {
   display: none;
