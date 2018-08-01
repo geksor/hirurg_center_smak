@@ -338,6 +338,15 @@ body{
 .logoLink{
   font-size: 0;
 }
+.btn_mobile{
+  font-size: 0;
+  rect{
+    fill: #ffffff;
+  }
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+}
 
 //--siteStyle--//
 .header{
@@ -350,9 +359,39 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 ); /* IE6-9 */
   padding-top: 30px;
   padding-bottom: 13px;
+  @media (min-width: 1200px) and (max-width: 1265px) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(md){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.header__phoneWrap{
+  @include media-breakpoint-down(sm){
+    font-size: 0;
+  }
 }
 .header__phone{
-  border-bottom: dashed 1px;
+  &.textPhone{
+    border-bottom: dashed 1px;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+  }
+  &.svg{
+    @include media-breakpoint-up(md){
+      display: none;
+    }
+  }
+}
+.header__searchButtonWrap,.header__searchButton{
+  font-size: 0;
+}
+.header__mainMenuWrap{
+  @include media-breakpoint-down(md){
+    display: none;
+  }
 }
 
 .sliderLine{
@@ -369,6 +408,9 @@ body{
   bottom: 50px;
   left: 0;
   width: 100%;
+  @include media-breakpoint-down(md){
+    bottom: 25px;
+  }
 }
 .slider__navBtn{
   @extend .slideNavBtn;
@@ -376,6 +418,12 @@ body{
     fill: #ffffff;
   }
   &:hover{
+    background-color: #FFFFFF;
+    path{
+      fill: #3e3e3e;
+    }
+  }
+  @include media-breakpoint-down(md){
     background-color: #FFFFFF;
     path{
       fill: #3e3e3e;
@@ -392,13 +440,31 @@ body{
     background-image: url("../images/slider_bgnd.png");
     background-position: right bottom;
     background-repeat: no-repeat;
+    @include media-breakpoint-down(md){
+      background-size: auto 100%;
+    }
+    @include media-breakpoint-down(sm){
+      background-image: none;
+    }
+  }
+  @include media-breakpoint-down(md){
+    height: 400px;
   }
 }
 .slider__textRow{
-    padding-top: 250px;
+  padding-top: 250px;
+  @include media-breakpoint-down(md){
+    padding-top: 45px;
+  }
+  @include media-breakpoint-down(sm){
+    padding-top: 15px;
+  }
 }
 .slider__text{
-  @extend .f_Montserrat-Medium,.fc_fff;
+  @extend .f_Montserrat-Medium,.fc_fff,.fs_24;
+  @include media-breakpoint-up(md){
+    font-size: 36px;
+  }
   @include media-breakpoint-up(xl){
     font-size: 48px;
     line-height: 72px;
@@ -407,6 +473,12 @@ body{
 }
 .slider__buttonRow{
   padding-top: 80px;
+  @include media-breakpoint-down(md){
+    padding-top: 30px;
+  }
+  @include media-breakpoint-down(sm){
+    padding-top: 20px;
+  }
 }
 .slider__moreButton{
   @extend .def_button,.fc_fff;
@@ -414,6 +486,9 @@ body{
   &:hover{
     background-color: #ffffff;
     color: #57b8cb;
+  }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
   }
 }
 .slider__signUpButton{
@@ -428,8 +503,12 @@ body{
 }
 
 .aboutNewsLine{
-  padding-top: 90px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(lg){
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
 }
 .aboutBlock__title{
   @extend .def_title;
@@ -449,11 +528,22 @@ body{
 .newsBlock__allNewsLink{
   @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_51d379,.text-transform_uppercase;
   text-decoration: underline;
-  margin-bottom: 45px;
+  &.top{
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+}
+.newsBlock__allNewWrapBottom{
+  @extend .text-align_center;
+  margin-top: 30px;
+  @include media-breakpoint-up(xl){
+    display: none;
+  }
 }
 .newsBlock__title{
   @extend .def_title;
-  margin-bottom: 80px;
+  margin: 45px 0 80px;
 }
 .newsRow{
   margin-bottom: 65px;
@@ -476,12 +566,18 @@ body{
 
 .serviceTypeLine{
   background-color: #f3f5f4;
-  padding-top: 90px;
-  padding-bottom: 160px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   overflow: hidden;
+  @include media-breakpoint-up(lg){
+    padding-top: 90px;
+    padding-bottom: 160px;  }
 }
 .headerRow{
-  margin-bottom: 90px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(lg){
+    margin-bottom: 90px;
+  }
 }
 .serviceType__title{
   @extend .def_title;
@@ -491,6 +587,12 @@ body{
     fill: #3e3e3e;
   }
   &:hover{
+    background-color: #51d379;
+    path{
+      fill: #ffffff;
+    }
+  }
+  @include media-breakpoint-down(md){
     background-color: #51d379;
     path{
       fill: #ffffff;
@@ -555,6 +657,9 @@ body{
 
 .payServiceLine{
   padding: 90px 0 195px;
+  @include media-breakpoint-down(md){
+    padding: 40px 0 100px;
+  }
 }
 .payService__title{
   @extend .def_title;
@@ -590,6 +695,11 @@ body{
   height: 100%;
   background-color: #f3f5f4;
   padding: 15px;
+  @include media-breakpoint-down(md){
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
 }
 .priceLink,.rulesLink{
   @extend .def_button,.fc_fff;
@@ -628,6 +738,9 @@ body{
     bottom: 0;
     font-size: 0;
   }
+  @include media-breakpoint-down(md){
+    display: none;
+  }
 }
 .consultForm__form{
   padding-bottom: 78px;
@@ -662,15 +775,25 @@ body{
   .map{
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    @extend .absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    @include media-breakpoint-down(lg){
+      width: 45%;
+    }
   }
-}
-.contact__WhiteBlock{
-  @extend .absolute;
-  background-color: #ffffff;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
+  @include media-breakpoint-down(md){
+    padding: 40px 0;
+    .map{
+      position: relative;
+      width: 100%;
+      bottom: auto;
+      top: -40px;
+      height: 50vw;
+    }
+  }
 }
 .contact__title{
   @extend .def_title;
@@ -700,6 +823,9 @@ body{
 .footer{
   padding: 105px 0 47px;
   background-color: #2e2e2e;
+  @include media-breakpoint-down(md){
+    padding: 40px 0 30px;
+  }
 }
 .footer__leftBlock{
   @extend .absolute;
@@ -709,6 +835,12 @@ body{
   bottom: 0;
   left: 0;
   width: 50%;
+  @include media-breakpoint-down(lg){
+    width: 55%;
+  }
+  @include media-breakpoint-down(md){
+    width: 100%;
+  }
 }
 .copyrightLine{
   margin-bottom: 50px;
@@ -725,6 +857,11 @@ body{
     &:hover{
       text-decoration: none;
     }
+  }
+}
+.footer__menuWrap{
+  @include media-breakpoint-down(md){
+    display: none;
   }
 }
 .footer__menu{

@@ -2406,7 +2406,7 @@ html {
 .fs_18, .h, .service_slide .slideTitle, .contactRow__title {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text {
   font-size: 24px; }
 
 .fs_30, .insCompany__title {
@@ -2454,7 +2454,7 @@ html {
 .flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list, .copyright {
   line-height: 24px; }
 
-.text-align_center, .def_desc, .consultForm__title, .consultForm__input, .contactRow .ico {
+.text-align_center, .def_desc, .newsBlock__allNewWrapBottom, .consultForm__title, .consultForm__input, .contactRow .ico {
   text-align: center; }
 
 .text-transform_uppercase, .left_menu, .newsBlock__allNewsLink, .copyright {
@@ -2469,7 +2469,7 @@ html {
 .relative, .main, .sliderLine, .contentBlock__list li {
   position: relative; }
 
-.absolute, .absolute_100prc, .slider__navBlock, .contentBlock__list li:before, .bgndImageBlock::before, .contact__WhiteBlock, .footer__leftBlock {
+.absolute, .absolute_100prc, .slider__navBlock, .contentBlock__list li:before, .bgndImageBlock::before, .contactLine .map, .footer__leftBlock {
   position: absolute; }
 
 .absolute_100prc {
@@ -2630,6 +2630,14 @@ body {
 .logoLink {
   font-size: 0; }
 
+.btn_mobile {
+  font-size: 0; }
+  .btn_mobile rect {
+    fill: #ffffff; }
+  @media (min-width: 992px) {
+    .btn_mobile {
+      display: none; } }
+
 .header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
   background: #3b98fa;
@@ -2644,9 +2652,33 @@ body {
   /* IE6-9 */
   padding-top: 30px;
   padding-bottom: 13px; }
+  @media (min-width: 1200px) and (max-width: 1265px) {
+    .header {
+      font-size: 14px; } }
+  @media (max-width: 991.98px) {
+    .header {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
-.header__phone {
+@media (max-width: 767.98px) {
+  .header__phoneWrap {
+    font-size: 0; } }
+
+.header__phone.textPhone {
   border-bottom: dashed 1px; }
+  @media (max-width: 767.98px) {
+    .header__phone.textPhone {
+      display: none; } }
+@media (min-width: 768px) {
+  .header__phone.svg {
+    display: none; } }
+
+.header__searchButtonWrap, .header__searchButton {
+  font-size: 0; }
+
+@media (max-width: 991.98px) {
+  .header__mainMenuWrap {
+    display: none; } }
 
 .sliderLine {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
@@ -2665,6 +2697,9 @@ body {
   bottom: 50px;
   left: 0;
   width: 100%; }
+  @media (max-width: 991.98px) {
+    .slider__navBlock {
+      bottom: 25px; } }
 
 .slider__navBtn path {
   fill: #ffffff; }
@@ -2672,6 +2707,11 @@ body {
   background-color: #FFFFFF; }
   .slider__navBtn:hover path {
     fill: #3e3e3e; }
+@media (max-width: 991.98px) {
+  .slider__navBtn {
+    background-color: #FFFFFF; }
+    .slider__navBtn path {
+      fill: #3e3e3e; } }
 
 .slider__slide {
   height: 807px;
@@ -2683,10 +2723,28 @@ body {
     background-image: url("../images/slider_bgnd.png");
     background-position: right bottom;
     background-repeat: no-repeat; }
+    @media (max-width: 991.98px) {
+      .slider__slide .contBgnd {
+        background-size: auto 100%; } }
+    @media (max-width: 767.98px) {
+      .slider__slide .contBgnd {
+        background-image: none; } }
+  @media (max-width: 991.98px) {
+    .slider__slide {
+      height: 400px; } }
 
 .slider__textRow {
   padding-top: 250px; }
+  @media (max-width: 991.98px) {
+    .slider__textRow {
+      padding-top: 45px; } }
+  @media (max-width: 767.98px) {
+    .slider__textRow {
+      padding-top: 15px; } }
 
+@media (min-width: 768px) {
+  .slider__text {
+    font-size: 36px; } }
 @media (min-width: 1200px) {
   .slider__text {
     font-size: 48px;
@@ -2695,12 +2753,21 @@ body {
 
 .slider__buttonRow {
   padding-top: 80px; }
+  @media (max-width: 991.98px) {
+    .slider__buttonRow {
+      padding-top: 30px; } }
+  @media (max-width: 767.98px) {
+    .slider__buttonRow {
+      padding-top: 20px; } }
 
 .slider__moreButton {
   border-color: #ffffff; }
   .slider__moreButton:hover {
     background-color: #ffffff;
     color: #57b8cb; }
+  @media (max-width: 767.98px) {
+    .slider__moreButton {
+      margin-bottom: 30px; } }
 
 .slider__signUpButton {
   color: #57b8cb;
@@ -2711,8 +2778,12 @@ body {
     color: #ffffff; }
 
 .aboutNewsLine {
-  padding-top: 90px;
-  padding-bottom: 100px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media (min-width: 992px) {
+    .aboutNewsLine {
+      padding-top: 90px;
+      padding-bottom: 100px; } }
 
 .aboutBlock__title {
   margin-bottom: 60px; }
@@ -2721,11 +2792,19 @@ body {
   margin-bottom: 45px; }
 
 .newsBlock__allNewsLink {
-  text-decoration: underline;
-  margin-bottom: 45px; }
+  text-decoration: underline; }
+  @media (max-width: 1199.98px) {
+    .newsBlock__allNewsLink.top {
+      display: none; } }
+
+.newsBlock__allNewWrapBottom {
+  margin-top: 30px; }
+  @media (min-width: 1200px) {
+    .newsBlock__allNewWrapBottom {
+      display: none; } }
 
 .newsBlock__title {
-  margin-bottom: 80px; }
+  margin: 45px 0 80px; }
 
 .newsRow {
   margin-bottom: 65px; }
@@ -2742,12 +2821,19 @@ body {
 
 .serviceTypeLine {
   background-color: #f3f5f4;
-  padding-top: 90px;
-  padding-bottom: 160px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    .serviceTypeLine {
+      padding-top: 90px;
+      padding-bottom: 160px; } }
 
 .headerRow {
-  margin-bottom: 90px; }
+  margin-bottom: 40px; }
+  @media (min-width: 992px) {
+    .headerRow {
+      margin-bottom: 90px; } }
 
 .serviceType__navBtn path {
   fill: #3e3e3e; }
@@ -2755,6 +2841,11 @@ body {
   background-color: #51d379; }
   .serviceType__navBtn:hover path {
     fill: #ffffff; }
+@media (max-width: 991.98px) {
+  .serviceType__navBtn {
+    background-color: #51d379; }
+    .serviceType__navBtn path {
+      fill: #ffffff; } }
 
 .service_Slider {
   margin-right: -200px; }
@@ -2800,6 +2891,9 @@ body {
 
 .payServiceLine {
   padding: 90px 0 195px; }
+  @media (max-width: 991.98px) {
+    .payServiceLine {
+      padding: 40px 0 100px; } }
 
 .payService__title {
   margin-bottom: 60px; }
@@ -2824,6 +2918,11 @@ body {
   height: 100%;
   background-color: #f3f5f4;
   padding: 15px; }
+  @media (max-width: 991.98px) {
+    .payService__linksBlock {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-top: 30px; } }
 
 .priceLink, .rulesLink {
   max-width: 260px; }
@@ -2861,6 +2960,9 @@ body {
   content: url("../images/8.png");
   bottom: 0;
   font-size: 0; }
+@media (max-width: 991.98px) {
+  .bgndImageBlock {
+    display: none; } }
 
 .consultForm__form {
   padding-bottom: 78px; }
@@ -2889,14 +2991,23 @@ body {
   padding: 90px 0; }
   .contactLine .map {
     -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
-
-.contact__WhiteBlock {
-  background-color: #ffffff;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%; }
+    filter: grayscale(1);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%; }
+    @media (max-width: 1199.98px) {
+      .contactLine .map {
+        width: 45%; } }
+  @media (max-width: 991.98px) {
+    .contactLine {
+      padding: 40px 0; }
+      .contactLine .map {
+        position: relative;
+        width: 100%;
+        bottom: auto;
+        top: -40px;
+        height: 50vw; } }
 
 .contact__title {
   margin-bottom: 72px; }
@@ -2913,6 +3024,9 @@ body {
 .footer {
   padding: 105px 0 47px;
   background-color: #2e2e2e; }
+  @media (max-width: 991.98px) {
+    .footer {
+      padding: 40px 0 30px; } }
 
 .footer__leftBlock {
   background: no-repeat center url("../images/20.png");
@@ -2921,6 +3035,12 @@ body {
   bottom: 0;
   left: 0;
   width: 50%; }
+  @media (max-width: 1199.98px) {
+    .footer__leftBlock {
+      width: 55%; } }
+  @media (max-width: 991.98px) {
+    .footer__leftBlock {
+      width: 100%; } }
 
 .copyrightLine {
   margin-bottom: 50px; }
@@ -2934,6 +3054,10 @@ body {
     text-decoration: underline; }
     .weLinkWrap a:hover {
       text-decoration: none; }
+
+@media (max-width: 991.98px) {
+  .footer__menuWrap {
+    display: none; } }
 
 .footer__menu li:not(:last-child) {
   margin-bottom: 15px; }

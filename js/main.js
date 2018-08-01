@@ -211,7 +211,22 @@ $('.service_Slider').slick({
     '                                          d="M11.612,-0.000 L10.899,0.731 L14.070,3.983 L-0.000,3.983 L-0.000,5.017 L14.070,5.017 L10.899,8.269 L11.612,9.000 L16.000,4.500 L11.612,-0.000 Z"/>\n' +
     '                                </svg>\n' +
     '                            </button>',
-    appendArrows: $('.serviceType__navBlock')
+    appendArrows: $('.serviceType__navBlock'),
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+    ]
 });
 $('#course_select').on('change', function () {
     $('.courseTiming').removeClass('active');
