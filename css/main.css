@@ -2373,13 +2373,13 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title {
+.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title {
+.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title, .contactRow__text, .copyright, .weLinkWrap, .footer__menu {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2397,28 +2397,28 @@ html {
 .fs_12 {
   font-size: 12px; }
 
-.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list {
+.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu {
   font-size: 14px; }
 
-.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input {
+.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text {
   font-size: 16px; }
 
-.fs_18, .h, .service_slide .slideTitle {
+.fs_18, .h, .service_slide .slideTitle, .contactRow__title {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
   font-size: 24px; }
 
-.fs_30 {
+.fs_30, .insCompany__title {
   font-size: 30px; }
 
 .fs_36, .consultForm__title {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input {
+.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu {
   color: #ffffff; }
 
-.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list {
+.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title {
   color: #2e2e2e; }
 
 .fc_3b98fa, .aboutBlock__title span {
@@ -2433,31 +2433,31 @@ html {
 .fls_06 {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list {
+.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu {
   letter-spacing: .7px; }
 
-.fls_08, .header, .service_slide .slideNumber, .consultForm__input {
+.fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text {
   letter-spacing: .8px; }
 
-.fls_09, .service_slide .slideTitle {
+.fls_09, .service_slide .slideTitle, .contactRow__title {
   letter-spacing: .9px; }
 
 .fls_10, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText {
   letter-spacing: 1px; }
 
-.fls_15, .newsTitle {
+.fls_15, .newsTitle, .insCompany__title {
   letter-spacing: 1.5px; }
 
-.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
   letter-spacing: 2.4px; }
 
-.flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list {
+.flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list, .copyright {
   line-height: 24px; }
 
-.text-align_center, .def_desc, .consultForm__title, .consultForm__input {
+.text-align_center, .def_desc, .consultForm__title, .consultForm__input, .contactRow .ico {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .newsBlock__allNewsLink {
+.text-transform_uppercase, .left_menu, .newsBlock__allNewsLink, .copyright {
   text-transform: uppercase; }
 
 .flex, .page, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .service_slide, .payService__linksBlock {
@@ -2469,7 +2469,7 @@ html {
 .relative, .main, .sliderLine, .contentBlock__list li {
   position: relative; }
 
-.absolute, .absolute_100prc, .slider__navBlock, .contentBlock__list li:before, .bgndImageBlock::before {
+.absolute, .absolute_100prc, .slider__navBlock, .contentBlock__list li:before, .bgndImageBlock::before, .contact__WhiteBlock, .footer__leftBlock {
   position: absolute; }
 
 .absolute_100prc {
@@ -2567,16 +2567,16 @@ body {
     #buttonUp svg path {
       fill: #ffffff; }
 
-.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
   line-height: normal; }
   @media (min-width: 576px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
       font-size: 32px; } }
   @media (min-width: 768px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
       font-size: 36px; } }
   @media (min-width: 1200px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
       font-size: 48px; } }
 
 .def_desc {
@@ -2627,10 +2627,21 @@ body {
   .imgWrap img, .aboutBlockImgWrap img, .newsImgWrap img {
     border-radius: 8px; }
 
+.logoLink {
+  font-size: 0; }
+
 .header {
-  background-color: #3b98fa;
-  background-image: url("../images/gradient.png");
-  background-repeat: no-repeat;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
+  background: #3b98fa;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3b98fa 0%, #51d379 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 );
+  /* IE6-9 */
   padding-top: 30px;
   padding-bottom: 13px; }
 
@@ -2638,9 +2649,17 @@ body {
   border-bottom: dashed 1px; }
 
 .sliderLine {
-  background-color: #3b98fa;
-  background-image: url("../images/gradient.png");
-  background-repeat: no-repeat; }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
+  background: #3b98fa;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3b98fa 0%, #51d379 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3b98fa 0%, #51d379 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 );
+  /* IE6-9 */ }
 
 .slider__navBlock {
   bottom: 50px;
@@ -2865,6 +2884,59 @@ body {
   .consultForm__submit:hover {
     background-color: transparent;
     color: #ffffff; }
+
+.contactLine {
+  padding: 90px 0; }
+  .contactLine .map {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+
+.contact__WhiteBlock {
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%; }
+
+.contact__title {
+  margin-bottom: 72px; }
+
+.contactRow {
+  margin-bottom: 40px; }
+
+.contactRow__title, .contactRow__text {
+  margin-bottom: 10px; }
+
+.insCompany__title {
+  margin: 50px 0; }
+
+.footer {
+  padding: 105px 0 47px;
+  background-color: #2e2e2e; }
+
+.footer__leftBlock {
+  background: no-repeat center url("../images/20.png");
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%; }
+
+.copyrightLine {
+  margin-bottom: 50px; }
+
+.copyright {
+  margin-right: -20px; }
+
+.weLinkWrap {
+  text-align: right; }
+  .weLinkWrap a {
+    text-decoration: underline; }
+    .weLinkWrap a:hover {
+      text-decoration: none; }
+
+.footer__menu li:not(:last-child) {
+  margin-bottom: 15px; }
 
 .btn-hamburger {
   display: none;

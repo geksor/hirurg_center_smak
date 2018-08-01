@@ -335,13 +335,19 @@ body{
     border-radius: 8px;
   }
 }
+.logoLink{
+  font-size: 0;
+}
 
 //--siteStyle--//
 .header{
   @extend .f_Montserrat-Medium,.fs_16,.fc_fff,.fls_08;
-  background-color: #3b98fa;
-  background-image: url("../images/gradient.png");
-  background-repeat: no-repeat;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
+  background: #3b98fa; /* Old browsers */
+  background: -moz-linear-gradient(left, #3b98fa 0%, #51d379 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3b98fa 0%,#51d379 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3b98fa 0%,#51d379 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 ); /* IE6-9 */
   padding-top: 30px;
   padding-bottom: 13px;
 }
@@ -351,9 +357,12 @@ body{
 
 .sliderLine{
   @extend .relative;
-  background-color: #3b98fa;
-  background-image: url("../images/gradient.png");
-  background-repeat: no-repeat;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
+  background: #3b98fa; /* Old browsers */
+  background: -moz-linear-gradient(left, #3b98fa 0%, #51d379 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #3b98fa 0%,#51d379 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #3b98fa 0%,#51d379 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 ); /* IE6-9 */
 }
 .slider__navBlock{
   @extend .absolute;
@@ -645,5 +654,84 @@ body{
   &:hover{
     background-color: transparent;
     color: #ffffff;
+  }
+}
+
+.contactLine{
+  padding: 90px 0;
+  .map{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+}
+.contact__WhiteBlock{
+  @extend .absolute;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+.contact__title{
+  @extend .def_title;
+  margin-bottom: 72px;
+}
+.contactRow{
+  @extend .fc_2e2;
+  margin-bottom: 40px;
+  .ico{
+    @extend .text-align_center;
+  }
+}
+.contactRow__title,.contactRow__text{
+  margin-bottom: 10px;
+}
+.contactRow__title{
+  @extend .f_Montserrat-SemiBold,.fs_18,.fls_09;
+}
+.contactRow__text{
+  @extend .f_Montserrat-Medium,.fs_16,.fls_08;
+}
+.insCompany__title{
+  @extend .f_Montserrat-SemiBold,.fs_30,.fls_15,.fc_2e2;
+  margin: 50px 0;
+}
+
+.footer{
+  padding: 105px 0 47px;
+  background-color: #2e2e2e;
+}
+.footer__leftBlock{
+  @extend .absolute;
+  background: no-repeat center url("../images/20.png");
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+.copyrightLine{
+  margin-bottom: 50px;
+}
+.copyright{
+  @extend .f_Montserrat-Medium,.fs_14,.flh_24,.fls_07,.fc_fff,.text-transform_uppercase;
+  margin-right: -20px;
+}
+.weLinkWrap{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff;
+  text-align: right;
+  a{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.footer__menu{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff;
+  li{
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
   }
 }
