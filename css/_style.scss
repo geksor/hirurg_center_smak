@@ -516,6 +516,9 @@ body{
   span{
     @extend .fc_3b98fa;
   }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 20px;
+  }
 }
 .aboutBlock__text{
   @extend .def_text;
@@ -544,14 +547,24 @@ body{
 .newsBlock__title{
   @extend .def_title;
   margin: 45px 0 80px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 40px;
+  }
 }
 .newsRow{
   margin-bottom: 65px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
+  }
 }
 .newsImgWrap{
   @extend .imgWrap;
   img{
     width: 100%;
+    object-fit: cover;
+  }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
   }
 }
 .newsTitle{
@@ -667,10 +680,16 @@ body{
 .payService__title{
   @extend .def_title;
   margin-bottom: 60px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
+  }
 }
 .contentBlock__title{
   @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2;
   margin-bottom: 60px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
+  }
 }
 .contentBlock__list{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_2e2,.flh_24;
@@ -692,7 +711,6 @@ body{
     }
   }
 }
-
 .payService__linksBlock{
   @extend .flex,.flex-column,.justify-content-center,.align-items-center;
   height: 100%;
@@ -749,9 +767,16 @@ body{
   padding-bottom: 78px;
 }
 .consultForm__title{
-  @extend .f_Montserrat-Medium,.fs_36,.fc_fff,.text-align_center;
+  @extend .f_Montserrat-Medium,.fs_24,.fc_fff,.text-align_center;
   letter-spacing: 1.8px;
   margin-bottom: 56px;
+  @include media-breakpoint-up(sm){
+    font-size: 32px;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 36px;
+  }
+
 }
 .consultForm__input{
   @extend .f_Montserrat-Regular,.fs_16,.fls_08,.text-align_center,.fc_fff;

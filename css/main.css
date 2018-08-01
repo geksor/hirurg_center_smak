@@ -2406,13 +2406,13 @@ html {
 .fs_18, .h, .service_slide .slideTitle, .contactRow__title {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text, .consultForm__title {
   font-size: 24px; }
 
 .fs_30, .insCompany__title {
   font-size: 30px; }
 
-.fs_36, .consultForm__title {
+.fs_36 {
   font-size: 36px; }
 
 .fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu {
@@ -2787,6 +2787,9 @@ body {
 
 .aboutBlock__title {
   margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .aboutBlock__title {
+      margin-bottom: 20px; } }
 
 .aboutBlock__text {
   margin-bottom: 45px; }
@@ -2805,12 +2808,22 @@ body {
 
 .newsBlock__title {
   margin: 45px 0 80px; }
+  @media (max-width: 767.98px) {
+    .newsBlock__title {
+      margin-bottom: 40px; } }
 
 .newsRow {
   margin-bottom: 65px; }
+  @media (max-width: 767.98px) {
+    .newsRow {
+      margin-bottom: 30px; } }
 
 .newsImgWrap img {
-  width: 100%; }
+  width: 100%;
+  object-fit: cover; }
+@media (max-width: 767.98px) {
+  .newsImgWrap {
+    margin-bottom: 30px; } }
 
 .newsTitle {
   line-height: normal;
@@ -2900,9 +2913,15 @@ body {
 
 .payService__title {
   margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .payService__title {
+      margin-bottom: 30px; } }
 
 .contentBlock__title {
   margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .contentBlock__title {
+      margin-bottom: 30px; } }
 
 .contentBlock__list {
   padding-left: 25px; }
@@ -2973,6 +2992,12 @@ body {
 .consultForm__title {
   letter-spacing: 1.8px;
   margin-bottom: 56px; }
+  @media (min-width: 576px) {
+    .consultForm__title {
+      font-size: 32px; } }
+  @media (min-width: 768px) {
+    .consultForm__title {
+      font-size: 36px; } }
 
 .consultForm__input {
   padding: 14px;
