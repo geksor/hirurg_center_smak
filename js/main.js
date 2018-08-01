@@ -226,6 +226,13 @@ $('.service_Slider').slick({
                 slidesToScroll: 2
             }
         },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
     ]
 });
 $('#course_select').on('change', function () {

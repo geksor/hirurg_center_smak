@@ -2851,6 +2851,9 @@ body {
   margin-right: -200px; }
   .service_Slider .slick-list {
     padding-right: 200px; }
+  @media (max-width: 767.98px) {
+    .service_Slider {
+      margin-right: -170px; } }
 
 .service_slideBlock {
   margin-right: 11px; }
