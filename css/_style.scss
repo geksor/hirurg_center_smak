@@ -347,6 +347,9 @@ body{
     display: none;
   }
 }
+svg{
+  max-width: 100%;
+}
 
 //--siteStyle--//
 .header{
@@ -385,7 +388,7 @@ body{
     }
   }
 }
-.header__searchButtonWrap,.header__searchButton{
+  .header__searchButtonWrap,.header__searchButton{
   font-size: 0;
 }
 .header__mainMenuWrap{
@@ -483,9 +486,11 @@ body{
 .slider__moreButton{
   @extend .def_button,.fc_fff;
   border-color: #ffffff;
-  &:hover{
-    background-color: #ffffff;
-    color: #57b8cb;
+  @include media-breakpoint-up(lg){
+    &:hover{
+      background-color: #ffffff;
+      color: #57b8cb;
+    }
   }
   @include media-breakpoint-down(sm){
     margin-bottom: 30px;
@@ -496,9 +501,11 @@ body{
   color: #57b8cb;
   background-color: #ffffff;
   border-color: #ffffff;
-  &:hover{
-    background-color: transparent;
-    color: #ffffff;
+  @include media-breakpoint-up(lg){
+    &:hover{
+      background-color: transparent;
+      color: #ffffff;
+    }
   }
 }
 
@@ -650,22 +657,24 @@ body{
   .slideMoreLink{
     text-align: right;
   }
-  &:hover{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b99f8+0,4bc39b+100 */
-    background: #3b99f8; /* Old browsers */
-    background: -moz-linear-gradient(left, #3b99f8 0%, #4bc39b 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #3b99f8 0%,#4bc39b 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #3b99f8 0%,#4bc39b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b99f8', endColorstr='#4bc39b',GradientType=1 ); /* IE6-9 */
-    .slideNumber{
-      @extend .fc_fff800;
-    }
-    .slideTitle,.slideText{
-      color: #FFFFFF;
-    }
-    .slideMoreLink{
-      .dots{
-        background-color: #fff800;
+  @include media-breakpoint-up(lg){
+    &:hover{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b99f8+0,4bc39b+100 */
+      background: #3b99f8; /* Old browsers */
+      background: -moz-linear-gradient(left, #3b99f8 0%, #4bc39b 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #3b99f8 0%,#4bc39b 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #3b99f8 0%,#4bc39b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b99f8', endColorstr='#4bc39b',GradientType=1 ); /* IE6-9 */
+      .slideNumber{
+        color: #fff800;
+      }
+      .slideTitle,.slideText{
+        color: #FFFFFF;
+      }
+      .slideMoreLink{
+        .dots{
+          background-color: #fff800;
+        }
       }
     }
   }
@@ -730,17 +739,21 @@ body{
   background-color: #52d379;
   margin-bottom: 40px;
   border-color: #52d379;
-  &:hover{
-    background-color: transparent;
-    color: #52d379;
+  @include media-breakpoint-up(lg) {
+    &:hover {
+      background-color: transparent;
+      color: #52d379;
+    }
   }
 }
 .rulesLink{
   background-color: #3b98fa;
   border-color: #3b98fa;
-  &:hover{
-    background-color: transparent;
-    color: #3b98fa;
+  @include media-breakpoint-up(lg) {
+    &:hover {
+      background-color: transparent;
+      color: #3b98fa;
+    }
   }
 }
 
@@ -792,14 +805,17 @@ body{
   border-color: #ffffff;
   margin: 14px auto 0;
   max-width: 230px;
-  &:hover{
-    background-color: transparent;
-    color: #ffffff;
+  @include media-breakpoint-up(lg) {
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+    }
   }
 }
 
 .contactLine{
   padding: 90px 0;
+  overflow: hidden;
   .map{
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -844,8 +860,16 @@ body{
   @extend .f_Montserrat-Medium,.fs_16,.fls_08;
 }
 .insCompany__title{
-  @extend .f_Montserrat-SemiBold,.fs_30,.fls_15,.fc_2e2;
-  margin: 50px 0;
+  @extend .f_Montserrat-SemiBold,.fs_24,.fls_15,.fc_2e2;
+  margin: 20px 0;
+  @include media-breakpoint-up(sm){
+    font-size: 28px;
+    margin: 50px 0;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 30px;
+  }
+
 }
 
 .footer{
@@ -853,6 +877,10 @@ body{
   background-color: #2e2e2e;
   @include media-breakpoint-down(md){
     padding: 40px 0 30px;
+  }
+  @include media-breakpoint-down(md){
+    padding: 20px 0 10px;
+    text-align: center;
   }
 }
 .footer__leftBlock{
@@ -872,10 +900,25 @@ body{
 }
 .copyrightLine{
   margin-bottom: 50px;
+  @include media-breakpoint-down(md){
+    margin-bottom: 19px;
+  }
+}
+.footer__logoWrap{
+  @include media-breakpoint-down(xs){
+    img{
+      width: 70px;
+    }
+  }
 }
 .copyright{
   @extend .f_Montserrat-Medium,.fs_14,.flh_24,.fls_07,.fc_fff,.text-transform_uppercase;
   margin-right: -20px;
+  @include media-breakpoint-down(xs){
+    margin: 0;
+    font-size: 12px;
+    line-height: normal;
+  }
 }
 .weLinkWrap{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff;
@@ -885,6 +928,9 @@ body{
     &:hover{
       text-decoration: none;
     }
+  }
+  @include media-breakpoint-down(xs){
+    text-align: center;
   }
 }
 .footer__menuWrap{

@@ -2406,10 +2406,10 @@ html {
 .fs_18, .h, .service_slide .slideTitle, .contactRow__title {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text, .consultForm__title {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text, .consultForm__title, .insCompany__title {
   font-size: 24px; }
 
-.fs_30, .insCompany__title {
+.fs_30 {
   font-size: 30px; }
 
 .fs_36 {
@@ -2427,7 +2427,7 @@ html {
 .fc_51d379, .newsBlock__allNewsLink, .service_slide .slideNumber {
   color: #51d379; }
 
-.fc_fff800, .service_slide:hover .slideNumber {
+.fc_fff800 {
   color: #fff800; }
 
 .fls_06 {
@@ -2638,6 +2638,9 @@ body {
     .btn_mobile {
       display: none; } }
 
+svg {
+  max-width: 100%; }
+
 .header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+0,51d379+100 */
   background: #3b98fa;
@@ -2762,9 +2765,10 @@ body {
 
 .slider__moreButton {
   border-color: #ffffff; }
-  .slider__moreButton:hover {
-    background-color: #ffffff;
-    color: #57b8cb; }
+  @media (min-width: 992px) {
+    .slider__moreButton:hover {
+      background-color: #ffffff;
+      color: #57b8cb; } }
   @media (max-width: 767.98px) {
     .slider__moreButton {
       margin-bottom: 30px; } }
@@ -2773,9 +2777,10 @@ body {
   color: #57b8cb;
   background-color: #ffffff;
   border-color: #ffffff; }
-  .slider__signUpButton:hover {
-    background-color: transparent;
-    color: #ffffff; }
+  @media (min-width: 992px) {
+    .slider__signUpButton:hover {
+      background-color: transparent;
+      color: #ffffff; } }
 
 .aboutNewsLine {
   padding-top: 40px;
@@ -2888,22 +2893,25 @@ body {
     overflow: hidden; }
   .service_slide .slideMoreLink {
     text-align: right; }
-  .service_slide:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b99f8+0,4bc39b+100 */
-    background: #3b99f8;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #3b99f8 0%, #4bc39b 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #3b99f8 0%, #4bc39b 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #3b99f8 0%, #4bc39b 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b99f8', endColorstr='#4bc39b',GradientType=1 );
-    /* IE6-9 */ }
-    .service_slide:hover .slideTitle, .service_slide:hover .slideText {
-      color: #FFFFFF; }
-    .service_slide:hover .slideMoreLink .dots {
-      background-color: #fff800; }
+  @media (min-width: 992px) {
+    .service_slide:hover {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b99f8+0,4bc39b+100 */
+      background: #3b99f8;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #3b99f8 0%, #4bc39b 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #3b99f8 0%, #4bc39b 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #3b99f8 0%, #4bc39b 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b99f8', endColorstr='#4bc39b',GradientType=1 );
+      /* IE6-9 */ }
+      .service_slide:hover .slideNumber {
+        color: #fff800; }
+      .service_slide:hover .slideTitle, .service_slide:hover .slideText {
+        color: #FFFFFF; }
+      .service_slide:hover .slideMoreLink .dots {
+        background-color: #fff800; } }
 
 .payServiceLine {
   padding: 90px 0 195px; }
@@ -2953,16 +2961,18 @@ body {
   background-color: #52d379;
   margin-bottom: 40px;
   border-color: #52d379; }
-  .priceLink:hover {
-    background-color: transparent;
-    color: #52d379; }
+  @media (min-width: 992px) {
+    .priceLink:hover {
+      background-color: transparent;
+      color: #52d379; } }
 
 .rulesLink {
   background-color: #3b98fa;
   border-color: #3b98fa; }
-  .rulesLink:hover {
-    background-color: transparent;
-    color: #3b98fa; }
+  @media (min-width: 992px) {
+    .rulesLink:hover {
+      background-color: transparent;
+      color: #3b98fa; } }
 
 .consultFormLine {
   padding-top: 62px;
@@ -3011,12 +3021,14 @@ body {
   border-color: #ffffff;
   margin: 14px auto 0;
   max-width: 230px; }
-  .consultForm__submit:hover {
-    background-color: transparent;
-    color: #ffffff; }
+  @media (min-width: 992px) {
+    .consultForm__submit:hover {
+      background-color: transparent;
+      color: #ffffff; } }
 
 .contactLine {
-  padding: 90px 0; }
+  padding: 90px 0;
+  overflow: hidden; }
   .contactLine .map {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -3047,7 +3059,14 @@ body {
   margin-bottom: 10px; }
 
 .insCompany__title {
-  margin: 50px 0; }
+  margin: 20px 0; }
+  @media (min-width: 576px) {
+    .insCompany__title {
+      font-size: 28px;
+      margin: 50px 0; } }
+  @media (min-width: 768px) {
+    .insCompany__title {
+      font-size: 30px; } }
 
 .footer {
   padding: 105px 0 47px;
@@ -3055,6 +3074,10 @@ body {
   @media (max-width: 991.98px) {
     .footer {
       padding: 40px 0 30px; } }
+  @media (max-width: 991.98px) {
+    .footer {
+      padding: 20px 0 10px;
+      text-align: center; } }
 
 .footer__leftBlock {
   background: no-repeat center url("../images/20.png");
@@ -3072,9 +3095,21 @@ body {
 
 .copyrightLine {
   margin-bottom: 50px; }
+  @media (max-width: 991.98px) {
+    .copyrightLine {
+      margin-bottom: 19px; } }
+
+@media (max-width: 575.98px) {
+  .footer__logoWrap img {
+    width: 70px; } }
 
 .copyright {
   margin-right: -20px; }
+  @media (max-width: 575.98px) {
+    .copyright {
+      margin: 0;
+      font-size: 12px;
+      line-height: normal; } }
 
 .weLinkWrap {
   text-align: right; }
@@ -3082,6 +3117,9 @@ body {
     text-decoration: underline; }
     .weLinkWrap a:hover {
       text-decoration: none; }
+  @media (max-width: 575.98px) {
+    .weLinkWrap {
+      text-align: center; } }
 
 @media (max-width: 991.98px) {
   .footer__menuWrap {
