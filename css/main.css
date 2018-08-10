@@ -2373,7 +2373,7 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title, .tableHead, .servPrice {
+.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title, .tableHead, .servPrice, .toggleBlock__toggle_reminder h2 b, .toggleBlock__toggle_reminder h3 b, .toggleBlock__toggle_reminder h4 b, .toggleBlock__toggle_reminder p b {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
@@ -2385,7 +2385,7 @@ html {
 @font-face {
   font-family: Montserrat-Regular;
   src: url(../css/fonts/Montserrat-Regular.ttf); }
-.f_Montserrat-Regular, body, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .consultForm__input {
+.f_Montserrat-Regular, body, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .consultForm__input, .toggleBlock__toggle_reminder h2, .toggleBlock__toggle_reminder h3, .toggleBlock__toggle_reminder h4, .toggleBlock__toggle_reminder p {
   font-family: Montserrat-Regular, sans-serif; }
 
 @font-face {
@@ -2397,7 +2397,7 @@ html {
 .fs_12 {
   font-size: 12px; }
 
-.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead {
+.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead, .toggleBlock__toggle_reminder h2, .toggleBlock__toggle_reminder h3, .toggleBlock__toggle_reminder h4, .toggleBlock__toggle_reminder p {
   font-size: 14px; }
 
 .fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
@@ -2418,7 +2418,7 @@ html {
 .fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu, .gvnpLink {
   color: #ffffff; }
 
-.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title, .toggleBlock__title, .tableHead {
+.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title, .toggleBlock__title, .tableHead, .toggleBlock__toggle_reminder h2, .toggleBlock__toggle_reminder h3, .toggleBlock__toggle_reminder h4, .toggleBlock__toggle_reminder p {
   color: #2e2e2e; }
 
 .fc_3b98fa, .aboutBlock__title span {
@@ -2433,7 +2433,7 @@ html {
 .fls_06 {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead {
+.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead, .toggleBlock__toggle_reminder h2, .toggleBlock__toggle_reminder h3, .toggleBlock__toggle_reminder h4, .toggleBlock__toggle_reminder p {
   letter-spacing: .7px; }
 
 .fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
@@ -3131,7 +3131,7 @@ svg {
 .pageTitle {
   padding: 120px 0 90px; }
 
-.toggleBlockWrap {
+.toggleBlockWrap_payService {
   margin-bottom: 120px; }
 
 .toggleBlock {
@@ -3166,6 +3166,21 @@ svg {
   border-radius: 8px;
   padding: 20px 40px;
   background-color: #3b98fa; }
+
+.toggleBlockWrap_reminder {
+  margin-bottom: 60px; }
+
+.toggleBlock__toggle_reminder h2, .toggleBlock__toggle_reminder h3, .toggleBlock__toggle_reminder h4, .toggleBlock__toggle_reminder p {
+  margin-bottom: 20px; }
+
+.servicePayLine_rules {
+  padding: 0 0 40px; }
+  .servicePayLine_rules .rules__title {
+    font-size: 30px; }
+  .servicePayLine_rules .contentBlock__title.bottom {
+    margin: 50px 0 0; }
+  .servicePayLine_rules .gvnpLink.reminder {
+    margin-top: 40px; }
 
 .btn-hamburger {
   display: none;

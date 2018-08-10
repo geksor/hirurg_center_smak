@@ -952,7 +952,8 @@ svg{
   padding: 120px 0 90px;
 }
 
-.toggleBlockWrap{
+//payServicePage
+.toggleBlockWrap_payService{
   margin-bottom: 120px;
 }
 .toggleBlock{
@@ -1003,3 +1004,30 @@ svg{
   padding: 20px 40px;
   background-color: #3b98fa;
 }
+
+//rememberPage
+.toggleBlockWrap_reminder{
+  margin-bottom: 60px;
+}
+.toggleBlock__toggle_reminder{
+  h2,h3,h4,p{
+    @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_2e2;
+    margin-bottom: 20px;
+    b{
+      @extend .f_Montserrat-SemiBold;
+    }
+  }
+}
+.servicePayLine_rules{
+  padding: 0 0 40px;
+  .rules__title{
+    font-size: 30px;
+  }
+  .contentBlock__title.bottom{
+    margin: 50px 0 0;
+  }
+  .gvnpLink.reminder{
+    margin-top: 40px;
+  }
+}
+
