@@ -2373,13 +2373,13 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title, .tableHead, .servPrice, .toggleBlock__toggle_text h2 b, .toggleBlock__toggle_text h3 b, .toggleBlock__toggle_text h4 b, .toggleBlock__toggle_text p b {
+.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title, .tableHead, .servPrice, .toggleBlock__toggle_text h2 b, .toggleBlock__toggle_text h3 b, .toggleBlock__toggle_text h4 b, .toggleBlock__toggle_text p b, .tableDoctorWrap .tableHeaderRow {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title, .contactRow__text, .copyright, .weLinkWrap, .footer__menu, .toggleBlock__title, .gvnpLink, .omsDocLink {
+.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title, .contactRow__text, .copyright, .weLinkWrap, .footer__menu, .toggleBlock__title, .gvnpLink, .omsDocLink, .tableDoctorWrap .otherRow, .personalText {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2394,13 +2394,13 @@ html {
 .f_Montserrat-Italic {
   font-family: Montserrat-Italic, sans-serif; }
 
-.fs_12 {
+.fs_12, .personalText .job {
   font-size: 12px; }
 
 .fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead, .toggleBlock__toggle_text h2, .toggleBlock__toggle_text h3, .toggleBlock__toggle_text h4, .toggleBlock__toggle_text p, .omsDocLink {
   font-size: 14px; }
 
-.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
+.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink, .tableDoctorWrap, .personalText .name {
   font-size: 16px; }
 
 .fs_18, .h, .service_slide .slideTitle, .contactRow__title, .servPrice {
@@ -2418,8 +2418,11 @@ html {
 .fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu, .gvnpLink, .omsDocLink {
   color: #ffffff; }
 
-.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title, .toggleBlock__title, .tableHead, .toggleBlock__toggle_text h2, .toggleBlock__toggle_text h3, .toggleBlock__toggle_text h4, .toggleBlock__toggle_text p {
+.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title, .toggleBlock__title, .tableHead, .toggleBlock__toggle_text h2, .toggleBlock__toggle_text h3, .toggleBlock__toggle_text h4, .toggleBlock__toggle_text p, .tableDoctorWrap, .personalText .name {
   color: #2e2e2e; }
+
+.fc_7e7e, .personalText .job {
+  color: #7e7e7e; }
 
 .fc_3b98fa, .aboutBlock__title span {
   color: #3b98fa; }
@@ -2430,13 +2433,13 @@ html {
 .fc_fff800 {
   color: #fff800; }
 
-.fls_06 {
+.fls_06, .personalText .job {
   letter-spacing: .6px; }
 
 .fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead, .toggleBlock__toggle_text h2, .toggleBlock__toggle_text h3, .toggleBlock__toggle_text h4, .toggleBlock__toggle_text p, .omsDocLink {
   letter-spacing: .7px; }
 
-.fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
+.fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink, .tableDoctorWrap, .personalText .name {
   letter-spacing: .8px; }
 
 .fls_09, .service_slide .slideTitle, .contactRow__title, .servPrice {
@@ -2454,7 +2457,7 @@ html {
 .flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list, .copyright {
   line-height: 24px; }
 
-.text-align_center, .def_desc, .newsBlock__allNewWrapBottom, .consultForm__title, .consultForm__input, .contactRow .ico, .dayCount, .servPrice, .gvnpLink, .omsDocLink {
+.text-align_center, .def_desc, .newsBlock__allNewWrapBottom, .consultForm__title, .consultForm__input, .contactRow .ico, .dayCount, .servPrice, .gvnpLink, .omsDocLink, .personalText {
   text-align: center; }
 
 .text-transform_uppercase, .left_menu, .newsBlock__allNewsLink, .copyright {
@@ -3198,6 +3201,34 @@ svg {
   border-radius: 8px;
   background-color: #f2657b;
   padding: 18px 70px; }
+
+.tableDoctorWrap {
+  padding: 0 15px;
+  margin-bottom: 40px; }
+  .tableDoctorWrap .tableHeaderRow, .tableDoctorWrap .otherRow {
+    padding: 20px 0; }
+    .tableDoctorWrap .tableHeaderRow:nth-child(odd), .tableDoctorWrap .otherRow:nth-child(odd) {
+      background-color: #f3f5f4; }
+
+.toggleBlockWrap_servTipe {
+  margin-bottom: 40px; }
+
+.personalBlock {
+  border: solid 1px #d1d5da;
+  padding: 15px;
+  margin-bottom: 30px; }
+
+.personalImg {
+  font-size: 0;
+  width: 100%;
+  height: 100%; }
+  .personalImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+
+.personalText .name {
+  margin-bottom: 15px; }
 
 .btn-hamburger {
   display: none;

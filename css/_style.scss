@@ -77,6 +77,9 @@ $mobileMenuOpenColor: #316d2f;
 .fc_2e2{
   color: #2e2e2e;
 }
+.fc_7e7e{
+  color: #7e7e7e;
+}
 .fc_3b98fa{
   color: #3b98fa;
 }
@@ -1049,4 +1052,55 @@ svg{
   border-radius: 8px;
   background-color: #f2657b;
   padding: 18px 70px;
+}
+
+//tableDoctor
+.tableDoctorWrap{
+  @extend .fs_16,.fls_08,.fc_2e2;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  .tableHeaderRow,.otherRow{
+    padding: 20px 0;
+    &:nth-child(odd){
+      background-color: #f3f5f4;
+    }
+  }
+  .tableHeaderRow{
+    @extend .f_Montserrat-SemiBold;
+  }
+  .otherRow{
+    @extend .f_Montserrat-Medium;
+  }
+}
+
+//servTipePage
+.toggleBlockWrap_servTipe{
+  margin-bottom: 40px;
+}
+
+//PersonalPage
+.personalBlock{
+  border: solid 1px #d1d5da;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.personalImg{
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.personalText{
+  @extend .text-align_center,.f_Montserrat-Medium;
+  .name{
+    @extend .fs_16,.fls_08,.fc_2e2;
+    margin-bottom: 15px;
+  }
+  .job{
+    @extend .fs_12,.fls_06,.fc_7e7e;
+  }
 }
