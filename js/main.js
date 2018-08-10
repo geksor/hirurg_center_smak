@@ -161,32 +161,6 @@ $('#buttonUp').click(function () {
     return false;
 });
 
-//Галерея документов
-// var popUpLink = jQuery('.image-popup-no-margins');
-
-// popUpLink.each(function () {
-//     var paths = (jQuery(this).attr('href'));
-//     jQuery('<img />').attr("src", paths);
-// });
-
-
-// popUpLink.magnificPopup({
-//     type: 'image',
-//     closeOnContentClick: true,
-//     closeBtnInside: false,
-//     fixedContentPos: true,
-//     mainClass: 'mfp-no-margins mfp-with-zoom',
-//     image: {
-//         verticalFit: true
-//     },
-//     zoom: {
-//         enabled: true,
-//         duration: 300
-//     }
-// });
-
-// slide();
-
 $('.service_Slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -238,4 +212,12 @@ $('.service_Slider').slick({
 $('#course_select').on('change', function () {
     $('.courseTiming').removeClass('active');
     $($('#course_select').val()).addClass('active')
+});
+
+$('.toggleBlock').on('click', function () {
+    console.log('toggleBlock click');
+    $(this).find('.toggleBlock__toggle').slideToggle();
+    $(this).find('.toggle__ico').toggleClass('open', function () {
+        $(this).hasClass('open')? $(this).html('&ndash;') : $(this).html('&#43;');
+    });
 });

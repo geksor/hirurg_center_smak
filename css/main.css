@@ -2373,13 +2373,13 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title {
+.f_Montserrat-SemiBold, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .newsBlock__allNewsLink, .newsTitle, .service_slide .slideNumber, .service_slide .slideTitle, .contentBlock__title, .contactRow__title, .insCompany__title, .tableHead, .servPrice {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title, .contactRow__text, .copyright, .weLinkWrap, .footer__menu {
+.f_Montserrat-Medium, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .header, .slider__text, .contentBlock__list, .consultForm__title, .contactRow__text, .copyright, .weLinkWrap, .footer__menu, .toggleBlock__title, .gvnpLink {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2397,16 +2397,16 @@ html {
 .fs_12 {
   font-size: 12px; }
 
-.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu {
+.fs_14, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead {
   font-size: 14px; }
 
-.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text {
+.fs_16, .left_menu, .header, .newsTitle, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
   font-size: 16px; }
 
-.fs_18, .h, .service_slide .slideTitle, .contactRow__title {
+.fs_18, .h, .service_slide .slideTitle, .contactRow__title, .servPrice {
   font-size: 18px; }
 
-.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .slider__text, .consultForm__title, .insCompany__title {
+.fs_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .slider__text, .consultForm__title, .insCompany__title, .toggleBlock__title {
   font-size: 24px; }
 
 .fs_30 {
@@ -2415,10 +2415,10 @@ html {
 .fs_36 {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu {
+.fc_fff, .left_menu, .header, .slider__text, .slider__moreButton, .priceLink, .rulesLink, .consultForm__title, .consultForm__input, .copyright, .weLinkWrap, .footer__menu, .gvnpLink {
   color: #ffffff; }
 
-.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title {
+.fc_2e2, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .service_slide .slideTitle, .contentBlock__title, .contentBlock__list, .contactRow, .insCompany__title, .toggleBlock__title, .tableHead {
   color: #2e2e2e; }
 
 .fc_3b98fa, .aboutBlock__title span {
@@ -2433,28 +2433,28 @@ html {
 .fls_06 {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu {
+.fls_07, .def_desc, .def_button, .slider__moreButton, .slider__signUpButton, .priceLink, .rulesLink, .consultForm__submit, .newsBlock__allNewsLink, .contentBlock__title, .contentBlock__list, .copyright, .weLinkWrap, .footer__menu, .tableHead {
   letter-spacing: .7px; }
 
-.fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text {
+.fls_08, .header, .service_slide .slideNumber, .consultForm__input, .contactRow__text, .gvnpLink {
   letter-spacing: .8px; }
 
-.fls_09, .service_slide .slideTitle, .contactRow__title {
+.fls_09, .service_slide .slideTitle, .contactRow__title, .servPrice {
   letter-spacing: .9px; }
 
 .fls_10, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText {
   letter-spacing: 1px; }
 
-.fls_15, .newsTitle, .insCompany__title {
+.fls_15, .newsTitle, .insCompany__title, .toggleBlock__title {
   letter-spacing: 1.5px; }
 
-.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+.fls_24, .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle {
   letter-spacing: 2.4px; }
 
 .flh_24, .def_text, .aboutBlock__text, .newsText, .service_slide .slideText, .contentBlock__list, .copyright {
   line-height: 24px; }
 
-.text-align_center, .def_desc, .newsBlock__allNewWrapBottom, .consultForm__title, .consultForm__input, .contactRow .ico {
+.text-align_center, .def_desc, .newsBlock__allNewWrapBottom, .consultForm__title, .consultForm__input, .contactRow .ico, .dayCount, .servPrice, .gvnpLink {
   text-align: center; }
 
 .text-transform_uppercase, .left_menu, .newsBlock__allNewsLink, .copyright {
@@ -2567,16 +2567,16 @@ body {
     #buttonUp svg path {
       fill: #ffffff; }
 
-.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+.def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle {
   line-height: normal; }
   @media (min-width: 576px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle {
       font-size: 32px; } }
   @media (min-width: 768px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle {
       font-size: 36px; } }
   @media (min-width: 1200px) {
-    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title {
+    .def_title, .aboutBlock__title, .newsBlock__title, .serviceType__title, .payService__title, .contact__title, .pageTitle {
       font-size: 48px; } }
 
 .def_desc {
@@ -3127,6 +3127,45 @@ svg {
 
 .footer__menu li:not(:last-child) {
   margin-bottom: 15px; }
+
+.pageTitle {
+  padding: 120px 0 90px; }
+
+.toggleBlockWrap {
+  margin-bottom: 120px; }
+
+.toggleBlock {
+  border-bottom: solid 1px #dbdde0; }
+
+.toggleBock__header {
+  padding: 25px 0;
+  cursor: pointer; }
+
+.toggle__ico {
+  font-size: 52px;
+  line-height: 35px;
+  color: #51d379; }
+  .toggle__ico.open {
+    color: #f2405c; }
+
+.toggleBlock__toggle {
+  padding: 0 15px; }
+
+.tableHead, .tableRow {
+  padding: 10px 0; }
+  .tableHead:nth-child(odd), .tableRow:nth-child(odd) {
+    background-color: #f3f5f4; }
+
+.servicePayLine_page {
+  padding-bottom: 40px; }
+
+.gvnpLink {
+  text-decoration: underline;
+  display: block;
+  margin-top: 90px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  background-color: #3b98fa; }
 
 .btn-hamburger {
   display: none;

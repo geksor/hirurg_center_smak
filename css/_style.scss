@@ -946,3 +946,60 @@ svg{
     }
   }
 }
+
+.pageTitle{
+  @extend .def_title;
+  padding: 120px 0 90px;
+}
+
+.toggleBlockWrap{
+  margin-bottom: 120px;
+}
+.toggleBlock{
+  border-bottom: solid 1px #dbdde0;
+}
+.toggleBock__header{
+  padding: 25px 0;
+  cursor: pointer;
+}
+.toggleBlock__title{
+  @extend .f_Montserrat-Medium,.fs_24,.fc_2e2,.fls_15;
+}
+.toggle__ico{
+  font-size: 52px;
+  line-height: 35px;
+  color: #51d379;
+  &.open{
+    color: #f2405c;
+  }
+}
+.toggleBlock__toggle{
+  padding: 0 15px;
+}
+.tableHead,.tableRow{
+  &:nth-child(odd){
+    background-color: #f3f5f4;
+  }
+  padding: 10px 0;
+}
+.tableHead{
+  @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2;
+}
+.dayCount,.servPrice{
+  @extend .text-align_center;
+}
+.servPrice{
+  @extend .f_Montserrat-SemiBold,.fs_18,.fls_09;
+}
+.servicePayLine_page{
+  padding-bottom: 40px;
+}
+.gvnpLink{
+  @extend .f_Montserrat-Medium,.fs_16,.fls_08,.fc_fff,.text-align_center;
+  text-decoration: underline;
+  display: block;
+  margin-top: 90px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  background-color: #3b98fa;
+}
