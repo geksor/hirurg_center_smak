@@ -1009,7 +1009,7 @@ svg{
 .toggleBlockWrap_reminder{
   margin-bottom: 60px;
 }
-.toggleBlock__toggle_reminder{
+.toggleBlock__toggle_text{
   h2,h3,h4,p{
     @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_2e2;
     margin-bottom: 20px;
@@ -1031,3 +1031,22 @@ svg{
   }
 }
 
+//omsPage
+.toggleBlockWrap_oms{
+  margin-bottom: 40px;
+}
+.omsDocLinkWrap{
+  margin-bottom: 90px;
+}
+.omsDocLinkBlock{
+  margin-bottom: 30px;
+}
+.omsDocLink{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff,.flex,.align-items-center,.justify-content-center,.text-align_center;
+  text-decoration: underline;
+  min-height: 100px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #f2657b;
+  padding: 18px 70px;
+}
