@@ -221,3 +221,23 @@ $('.toggleBlock').on('click', function () {
         $(this).hasClass('open')? $(this).html('&ndash;') : $(this).html('&#43;');
     });
 });
+
+$('.newsMore').on('click', function () {
+    var $fullText = $('.' + $(this).data('id'));
+    var $buttonText = $(this).find('.buttonText');
+    var $buttonIco = $(this).find('.buttonIco');
+
+    $fullText.slideToggle();
+    if ($(this).hasClass('more')){
+        $buttonText.text('Свернуть');
+        $buttonIco.find('svg').css('transform', 'rotate(180deg)');
+        $(this).removeClass('more');
+    }else {
+        $buttonText.text('Продолжить чтение');
+        $buttonIco.find('svg').removeAttr('style');
+        $(this).addClass('more');
+    }
+});
+$('.newsLess').on('click', function () {
+    $('.' + $(this).data('id')).trigger('click');
+});

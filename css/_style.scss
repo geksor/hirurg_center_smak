@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "jinmediaReboot";
-@import "magic_pop";
+@import "jquery.fancybox.min";
 @import "agreement";
 @import "slick";
 @import "slick-theme";
@@ -372,6 +372,23 @@ svg{
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  &.otherPage{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b98fa+45,3b98fa+45,51d379+100 */
+    background: rgb(59,152,250); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(59,152,250,1) 45%, rgba(59,152,250,1) 45%, rgba(81,211,121,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(59,152,250,1) 45%,rgba(59,152,250,1) 45%,rgba(81,211,121,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(59,152,250,1) 45%,rgba(59,152,250,1) 45%,rgba(81,211,121,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b98fa', endColorstr='#51d379',GradientType=1 ); /* IE6-9 */
+    padding: 10px 0;
+    .header__logoWrap{
+      img{
+        max-width: 59px;
+      }
+    }
+  }
+}
+.header__logoWrap{
+  font-size: 0;
 }
 .header__phoneWrap{
   @include media-breakpoint-down(sm){
@@ -391,7 +408,7 @@ svg{
     }
   }
 }
-  .header__searchButtonWrap,.header__searchButton{
+.header__searchButtonWrap,.header__searchButton{
   font-size: 0;
 }
 .header__mainMenuWrap{
@@ -953,6 +970,12 @@ svg{
 .pageTitle{
   @extend .def_title;
   padding: 120px 0 90px;
+  @include media-breakpoint-down(md){
+    padding: 70px 0 50px;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 35px 0 25px;
+  }
 }
 
 //payServicePage
@@ -1103,4 +1126,197 @@ svg{
   .job{
     @extend .fs_12,.fls_06,.fc_7e7e;
   }
+}
+
+//NewsPage
+.newsRow{
+  margin-bottom: 60px;
+}
+.newsImgWrap{
+  @extend .imgWrap,.relative;
+  width: 100%;
+  padding-top: 73.474%;
+  img{
+    @extend .absolute_100prc;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.newsTextWrap{
+  height: 100%;
+}
+.newsTitle{
+  @extend .f_Montserrat-SemiBold,.fs_16,.fls_08,.fc_2e2;
+}
+.newsPublishDate{
+  @extend .f_Montserrat-SemiBold,.fs_12,.fls_06,.fc_51d379;
+}
+.newsShortText{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_2e2,.flh_24;
+  margin: 30px 0 15px;
+  flex: 1;
+}
+.newsReadMore{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_51d379;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 8px;
+  background-color: #f3f5f4;
+  &.newsLess{
+    margin-top: 15px;
+  }
+}
+.newsFullText{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_2e2,.flh_24;
+  margin-top: 30px;
+  display: none;
+}
+
+.sitePagination{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_51d379,.flex;
+  margin-bottom: 100px;
+  li{
+    @extend .relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #f3f5f4;
+    &:not(:last-child){
+      margin-right: 3px;
+    }
+    &.active{
+      color: #ffffff;
+      background-color: #51d379;
+    }
+    &:hover{
+      color: #ffffff;
+      background-color: #48a756;
+    }
+    a{
+      @extend .absolute_100prc,.flex,.justify-content-center,.align-items-center;
+    }
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom: 60px;
+  }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
+  }
+}
+
+//CommentPage
+.commentRow{
+  margin-bottom: 40px;
+}
+.commentTitle{
+  @extend .f_Montserrat-SemiBold,.fs_16,.fls_08,.fc_2e2,.flh_24;
+}
+.commentCreateDate{
+  @extend .f_Montserrat-SemiBold,.fs_12,.fls_06,.fc_51d379,.flh_24;
+}
+.commentText{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_2e2,.flh_24;
+  margin-top: 30px;
+}
+.commentFormLine{
+  @extend .consultFormLine;
+  padding-top: 75px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.commentForm__form{
+  @extend .consultForm__form;
+  padding-bottom: 95px;
+}
+.commentForm__title{
+  @extend .consultForm__title;
+}
+.commentForm__input{
+  @extend .consultForm__input;
+  text-align: left;
+}
+.commentForm__textarea{
+  @extend .commentForm__input;
+  height: 220px;
+}
+.commentForm__submit{
+  @extend .consultForm__submit;
+}
+
+.pageMainImage{
+  @extend .imgWrap;
+  max-height: 500px;
+  height: 30vw;
+  img{
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+//AboutPage
+.aboutText{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.flh_24,.fc_2e2;
+  margin-top: 45px;
+  p{
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+}
+.licenseTitle{
+  @extend .pageTitle;
+  padding: 85px 0 65px;
+}
+.aboutContactLine{
+  margin-bottom: 40px;
+}
+.aboutDetailBlock{
+  height: 100%;
+}
+.aboutContactTitle{
+  @extend .f_Montserrat-SemiBold,.fs_36,.fc_2e2;
+  letter-spacing: 1.8px;
+  padding: 80px 0;
+}
+.aboutContactBody{
+  @extend .f_Montserrat-Medium,.fs_16,.fls_08,.fc_2e2;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #f3f5f4;
+  height: 100%;
+  padding: 70px 75px;
+  &.contact{
+    padding-left: 100px;
+  }
+  .contactTextRow,p{
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+  .bold{
+    @extend .f_Montserrat-SemiBold;
+  }
+}
+
+//VacansyPage
+.vacansyBlockWrap{
+  margin-top: 55px;
+}
+.vacansyRow{
+  @extend .commentRow;
+  margin-bottom: 45px;
+}
+.vacansyTitle{
+  @extend .commentTitle;
+}
+.vacansyCreateDate{
+  @extend .commentCreateDate;
+}
+.vacansyText{
+  @extend .commentText;
 }
