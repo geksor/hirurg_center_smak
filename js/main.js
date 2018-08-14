@@ -241,3 +241,8 @@ $('.newsMore').on('click', function () {
 $('.newsLess').on('click', function () {
     $('.' + $(this).data('id')).trigger('click');
 });
+
+$('#doctor_select').on('change', function () {
+    $('.doctorTiming').removeClass('active');
+    $($('#doctor_select').val()).addClass('active')
+});

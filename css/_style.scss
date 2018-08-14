@@ -709,7 +709,7 @@ svg{
 .payService__title{
   @extend .def_title;
   margin-bottom: 60px;
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }
 }
@@ -981,6 +981,9 @@ svg{
 //payServicePage
 .toggleBlockWrap_payService{
   margin-bottom: 120px;
+  @include media-breakpoint-down(md){
+    margin-bottom: 50px;
+  }
 }
 .toggleBlock{
   border-bottom: solid 1px #dbdde0;
@@ -988,9 +991,15 @@ svg{
 .toggleBock__header{
   padding: 25px 0;
   cursor: pointer;
+  @include media-breakpoint-down(xs){
+    padding: 15px 0;
+  }
 }
 .toggleBlock__title{
   @extend .f_Montserrat-Medium,.fs_24,.fc_2e2,.fls_15;
+  @include media-breakpoint-down(xs){
+    font-size: 20px;
+  }
 }
 .toggle__ico{
   font-size: 52px;
@@ -1004,22 +1013,36 @@ svg{
   padding: 0 15px;
 }
 .tableHead,.tableRow{
+  @extend .fs_14,.fls_07,.fc_2e2;
   &:nth-child(odd){
     background-color: #f3f5f4;
   }
   padding: 10px 0;
 }
 .tableHead{
-  @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2;
+  @extend .f_Montserrat-SemiBold;
+  @include media-breakpoint-down(xs){
+    font-size: 12px;
+  }
+}
+.tableRow{
+  .servPrice{
+    @extend .f_Montserrat-SemiBold,.fs_18,.fls_09;
+    @include media-breakpoint-down(sm){
+      font-size: 14px;
+    }
+  }
 }
 .dayCount,.servPrice{
   @extend .text-align_center;
 }
-.servPrice{
-  @extend .f_Montserrat-SemiBold,.fs_18,.fls_09;
-}
 .servicePayLine_page{
   padding-bottom: 40px;
+}
+.payServiceInfoImg{
+  @include media-breakpoint-down(md){
+    display: none;
+  }
 }
 .gvnpLink{
   @extend .f_Montserrat-Medium,.fs_16,.fls_08,.fc_fff,.text-align_center;
@@ -1029,6 +1052,9 @@ svg{
   border-radius: 8px;
   padding: 20px 40px;
   background-color: #3b98fa;
+  @include media-breakpoint-down(sm){
+    font-size: 14px;
+  }
 }
 
 //rememberPage
@@ -1048,6 +1074,12 @@ svg{
   padding: 0 0 40px;
   .rules__title{
     font-size: 30px;
+    @include media-breakpoint-down(sm){
+      font-size: 24px;
+    }
+    @include media-breakpoint-down(xs){
+      font-size: 18px;
+    }
   }
   .contentBlock__title.bottom{
     margin: 50px 0 0;
@@ -1063,6 +1095,9 @@ svg{
 }
 .omsDocLinkWrap{
   margin-bottom: 90px;
+  @include media-breakpoint-down(md){
+    margin-bottom: 40px;
+  }
 }
 .omsDocLinkBlock{
   margin-bottom: 30px;
@@ -1074,11 +1109,11 @@ svg{
   height: 100%;
   border-radius: 8px;
   background-color: #f2657b;
-  padding: 18px 70px;
+  padding: 18px;
 }
 
 //tableDoctor
-.tableDoctorWrap{
+.tableDoctorWrap-sm{
   @extend .fs_16,.fls_08,.fc_2e2;
   padding: 0 15px;
   margin-bottom: 40px;
@@ -1094,7 +1129,75 @@ svg{
   .otherRow{
     @extend .f_Montserrat-Medium;
   }
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(sm){
+    text-align: center;
+  }
+  @include media-breakpoint-down(xs){
+    display: none;
+  }
 }
+.tableDoctorWrap{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_08;
+  @include media-breakpoint-up(sm){
+    display: none;
+  }
+  label{
+    @extend .f_Montserrat-SemiBold,.fs_16,.fls_09;
+    margin-bottom: 20px;
+  }
+  .doctor__selectWrap{
+    @extend .relative;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    &:after{
+      @extend .absolute,.flex,.justify-content-center,.align-items-center;
+      z-index: 1;
+      content: url("#{$temlatePath}/images/chevron_down.svg");
+      width: 32px;
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+    .select{
+      @extend .relative,.f_Montserrat-SemiBold,.fs_16,.fls_09;
+      z-index: 2;
+      background-color: transparent;
+      width: 100%;
+      height: 42px;
+      border-radius: 8px;
+      border: solid 1px #cfd8dd;
+      padding-left: 20px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      option{
+        @extend .f_Montserrat-Medium,.fs_14;
+      }
+    }
+  }
+  .doctorTiming{
+    line-height: 30px;
+    &:not(.active){
+      display: none;
+    }
+    .doctorItem{
+      &:nth-child(even){
+        background-color: #f3f5f4;
+      }
+      margin-bottom: 20px;
+
+    }
+    .nameTitle{
+      @extend .f_Montserrat-SemiBold,.fs_16;
+    }
+    .tableMobile__time{
+      @extend .f_Montserrat-Medium,.fs_16;
+    }
+  }
+}
+
 
 //servTipePage
 .toggleBlockWrap_servTipe{
@@ -1132,7 +1235,7 @@ svg{
 .newsRow{
   margin-bottom: 60px;
 }
-.newsImgWrap{
+.newsPageImgWrap{
   @extend .imgWrap,.relative;
   width: 100%;
   padding-top: 73.474%;
@@ -1146,6 +1249,9 @@ svg{
 }
 .newsTextWrap{
   height: 100%;
+  @include media-breakpoint-down(md){
+    padding-top: 30px;
+  }
 }
 .newsTitle{
   @extend .f_Montserrat-SemiBold,.fs_16,.fls_08,.fc_2e2;
@@ -1270,7 +1376,13 @@ svg{
 }
 .licenseTitle{
   @extend .pageTitle;
-  padding: 85px 0 65px;
+  @include media-breakpoint-up(xl){
+    padding: 85px 0 65px;
+  }
+}
+.licenseImgLinkWrap{
+  margin-bottom: 30px;
+  font-size: 0;
 }
 .aboutContactLine{
   margin-bottom: 40px;
@@ -1282,6 +1394,14 @@ svg{
   @extend .f_Montserrat-SemiBold,.fs_36,.fc_2e2;
   letter-spacing: 1.8px;
   padding: 80px 0;
+  @include media-breakpoint-down(md){
+    padding: 45px 0;
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 25px 0;
+    font-size: 28px;
+  }
 }
 .aboutContactBody{
   @extend .f_Montserrat-Medium,.fs_16,.fls_08,.fc_2e2;
@@ -1292,6 +1412,9 @@ svg{
   padding: 70px 75px;
   &.contact{
     padding-left: 100px;
+    @include media-breakpoint-down(sm){
+      padding-left: 30px;
+    }
   }
   .contactTextRow,p{
     &:not(:last-child){
@@ -1300,6 +1423,9 @@ svg{
   }
   .bold{
     @extend .f_Montserrat-SemiBold;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 30px 15px;
   }
 }
 
